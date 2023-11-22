@@ -1,10 +1,15 @@
 num: int = abs(int(input("Введите целое число: ")))
-length: int = 0
 
+length: int = 0
 if num == 0:
-    print("Количество цифр в числе: 1")
+    length = 1
 else:
+    if ...:
+        # TODO: abs
+        ...
+
     while num > 0:
         length += 1
         num //= 10
-    print(f"Количество цифр в числе: {length}")
+
+print(f"Количество цифр в числе: {length}")

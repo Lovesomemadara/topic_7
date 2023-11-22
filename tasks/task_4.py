@@ -1,13 +1,14 @@
 n: int = int(input("Введите число: "))
-i: int = 0
-result: int = 0
 
+# TODO: Попробуйте использовать моржовый оператор
 if n <= 0:
     print("Число должно быть больше или равно 1")
 elif n == 1:
     print(1)
 else:
-    while i != n:
-        i += abs(1)
+    i: int = 1
+    result: int = 0
+    while i <= n:
         result += i
+        i += 1
     print(f"Сумма всех чисел от 1 до {n} равна: {result}")
