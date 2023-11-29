@@ -1,13 +1,10 @@
-num: int = abs(int(input("Введите целое число: ")))
-
 length: int = 0
-if num == 0:
+
+if (num := int(input("Введите целое число: "))) == 0:
     length = 1
 else:
-    if ...:
-        # TODO: abs
-        ...
-
+    if num < 0:
+        num *= -1
     while num > 0:
         length += 1
         num //= 10
