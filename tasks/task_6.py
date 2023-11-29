@@ -4,7 +4,8 @@ if (num := int(input("Введите целое число: "))) == 0:
     length = 1
 else:
     if num < 0:
-        num *= -1
+        # num *= -1
+        num = -num
     while num > 0:
         length += 1
         num //= 10
