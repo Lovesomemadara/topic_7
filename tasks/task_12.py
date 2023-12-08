@@ -1,1 +1,25 @@
-# TODO: Пожалуйста, добавьте свой код ниже с комментариями и понятными названиями переменных.
+asterisks: int = int(input("Введите целое положительное число: "))
+
+space = asterisks - 1
+'''count = 1
+for i in range(1, asterisks + 1):
+    for j in range(1, space + 1):
+        print(' ', end=' ')
+    space -= 1
+    for j in range(1, 2 * i):
+        print("*", end=' ')
+    print()'''
+stars = 1
+while asterisks > 0:
+    count = 1
+    while count <= space:
+        print(" ", end=" ")
+        count += 1
+    count = 1
+    while count <= stars:
+        print("*", end=" ")
+        count += 1
+    print()
+    space -= 1
+    stars += 2
+    asterisks -= 1
