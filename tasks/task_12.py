@@ -12,26 +12,6 @@ for i in range(1, asterisks + 1):
 
 # ----------------------------
 
-"""
-stars = 1
-space = asterisks - 1
-while asterisks > 0:
-    count = 1
-    while count <= space:
-        print(" ", end=" ")
-        count += 1
-    count = 1
-    while count <= stars:
-        print("*", end=" ")
-        count += 1
-    print()
-    space -= 1
-    stars += 2
-    asterisks -= 1
-"""
-
-# -----------------------------
-
 n: int = int(input("Введите целое положительное число: "))
 
 i = 1

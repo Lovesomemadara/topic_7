@@ -1,28 +1,34 @@
-# asterisks: int = int(input("Введите целое положительное число: "))
-#
-# for i in range(asterisks):
-#     print(" " * i + "*" * (2 * (asterisks - i) - 1))
-# for i in range(asterisks - 2, -1, -1):
-#     print(" " * i + "*" * (2 * (asterisks - i) - 1))
-
-
-# i = 0
-# while i < asterisks:
-#     print(" " * i + "*" * (2 * (asterisks - i) - 1))
-#     i += 1
-# i = asterisks - 2
-# while i >= 0:
-#     print(" " * i + "*" * (2 * (asterisks - i) - 1))
-#     i -= 1
-
-
-# -------------------
-
-n: int = 4
+n: int = int(input("Введите целое положительное число: "))
 
 # top
-i = 1
-while i <= n:
+for i in range(n, 0, -1):
+    space = n - i
+    stars = 2 * i
+
+    for j in range(space):
+        print(' ', end='')
+
+    for k in range(stars - 1):
+        print('*', end='')
+
+    print()
+
+# bottom
+for i in range(2, n + 1):
+    space = n - i
+    stars = 2 * i - 1
+
+    for j in range(space):
+        print(' ', end='')
+
+    for k in range(stars):
+        print('*', end='')
+
+    print()
+'''
+# top
+i = n
+while i > 1:
 
     space = n - i
     j = 1
@@ -37,7 +43,7 @@ while i <= n:
         k += 1
 
     print()
-    i += 1
+    i -= 1
 
 # bottom
 i = 1
@@ -57,3 +63,4 @@ while i <= n:
 
     print()
     i += 1
+'''
