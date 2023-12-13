@@ -7,8 +7,5 @@ if begin > end:
 for i in range(begin, end + 1):
     if i % 2 == 0:
         print(i)
-    elif begin % 2 == 0:
-        print(begin)
-    else:
-        if begin == end and begin % 2 != 0:
-            print(0)
+    elif begin == end:
+        print(0)
